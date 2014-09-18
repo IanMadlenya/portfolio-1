@@ -1,5 +1,5 @@
 //initialize all of our variables
-var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, cache, minifyCSS, clean, connect;
+var app, base, concat, directory, gulp, gutil, hostname, path, refresh, sass, uglify, imagemin, cache, minifyCSS, clean, connect, slim, coffee;
 
 //load all of our dependencies
 //add more here if you want to include more libraries
@@ -13,6 +13,8 @@ cache       = require('gulp-cache');
 minifyCSS   = require('gulp-minify-css');
 clean       = require('gulp-clean');
 connect     = require('gulp-connect');
+slim        = require('gulp-slim');
+coffee      = require('gulp-coffee');
 
 gulp.task('connect', function() {
   connect.server({
@@ -33,6 +35,14 @@ gulp.task('images', function(tmp) {
 gulp.task('images-deploy', function() {
     gulp.src(['app/images/*'])
         .pipe(gulp.dest('dist/images'));
+});
+
+//compiling our Javascripts
+gulp.task('coffee', function() {
+    //this is where our dev JS scripts are
+    return gulp.src('app/scripts/src/coffee/**/*.coffee')
+               .pipe(coffee({bare: true}).on('error', gutil.log))
+               .pipe(gulp.dest('app/scripts/src/'))
 });
 
 //compiling our Javascripts
@@ -110,6 +120,17 @@ gulp.task('html', function() {
        .on('error', gutil.log);
 });
 
+// Slim!
+gulp.task('slim', function(){
+  return gulp.src("app/slim/*.slim")
+    .pipe(connect.reload())
+    .pipe(slim({
+      pretty: true
+    }))
+    .pipe(gulp.dest("app/"))
+    .on('error', gutil.log);
+});
+
 //migrating over all HTML files for deployment
 gulp.task('html-deploy', function() {
     //grab everything, which should include htaccess, robots, etc
@@ -142,9 +163,11 @@ gulp.task('clean', function() {
 //  compress all scripts and SCSS files
 gulp.task('default', ['connect', 'scripts', 'styles'], function() {
     //a list of watchers, so it will watch all of the following files waiting for changes
-    gulp.watch('app/scripts/src/**', ['scripts']);
+    gulp.watch('app/scripts/src/coffee/**/*.coffee', ['coffee']);
+    gulp.watch('app/scripts/src/**/*.js', ['scripts']);
     gulp.watch('app/styles/scss/**', ['styles']);
     gulp.watch('app/images/**', ['images']);
+    gulp.watch('app/slim/*.slim', ['slim']);
     gulp.watch('app/*.html', ['html']);
 });
 
