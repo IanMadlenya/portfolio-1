@@ -1,0 +1,47 @@
+#portfolio-wrapper {
+  @include transition(all $long-transition);
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  #portfolio {
+    @include transition(all, $long-transition);
+    padding: $standard-bumper * 2;
+
+    @media #{$medium-up} {
+      padding: $standard-bumper * 4;
+    }
+
+    .card {
+      margin-bottom: $standard-bumper !important;
+    }
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    #name-block {
+      padding-top: $standard-bumper;
+      padding-bottom: $standard-bumper;
+
+      .pixel-guy {
+        height: 80px;
+        padding-bottom: 0.9375rem;
+      }
+    }
+
+    .info-block {
+      padding-top: $standard-bumper;
+      padding-bottom: $standard-bumper;
+    }
+
+    .info-piece {
+      padding-bottom: $standard-bumper * 2;
+
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+

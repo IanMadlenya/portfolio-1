@@ -1,11 +1,22 @@
 //misc settings
 @import 'config/_settings';
 @import 'config/_mixins';
+@import 'config/_variables';
+@import 'config/_utils';
 
 //frameworks
+@import '../../../bower_components/foundation/scss/foundation/components/grid';
 
 //global things
 @import 'general/_reset';
 @import 'layout/_main';
 
 //pages
+
+//components
+@import 'layout/loader';
+@import 'components/nav';
+@import 'components/overlay';
+@import 'components/card';
+@import 'components/resume';
+@import 'components/portfolio';

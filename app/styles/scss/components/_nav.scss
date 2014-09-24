@@ -1,0 +1,51 @@
+nav {
+  @include transition(height, $long-transition, ease-in-out);
+
+  top: 100%;
+  height: $nav-height;
+  width: 100%;
+  background-color: $green;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+
+  &.loaded {
+    top: 0%;
+  }
+
+  .links{
+    display: inline-block;
+
+    .nav-link {
+      @include transition(background-color, $short-transition);
+      @extend %BentonRegular;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      width: 110px;
+
+      color: white;
+      height: $nav-height;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 20px;
+
+      &:hover {
+        background-color: $pink;
+        cursor: pointer;
+      }
+    }
+
+    #arrow {
+      @include transition(all, $long-transition);
+
+      background-image: url(../images/arrow.png);
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      top: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 40px;
+    }
+  }
+}

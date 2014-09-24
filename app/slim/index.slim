@@ -11,13 +11,537 @@ html.no-js lang="en"
     meta name='description' content=''
     meta name='viewport' content='width=device-width, initial-scale=1'
     link rel='stylesheet' href='styles/styles.css'
+    link rel="shortcut icon" href="images/favicon.ico"
     / Place favicon.ico and apple-touch-icon.png in the root directory
+    title Hugh Francis
 
-    title Title
+  body.show-card
 
-  body
+    #loader
 
-    | ...content...
+    nav
+      .links
+        #show-card.nav-link Card
+        #show-resume.nav-link CV
+        #show-portfolio.nav-link Work
+        #arrow
+
+    #card-wrapper.row
+      #card.loading.info-piece.small-12.medium-6.columns.medium-offset-3.lasso
+        .row
+          .small-2.columns
+            img.pixel-guy src='images/pixel-guy.png'
+
+        .card.row.collapse
+          .portfolio-image.small-12.columns style='background-image: url(images/berlin-beer.jpg);'
+
+          .row
+            .small-12.columns
+              h1 Hugh Francis
+              hr
+          .blurb.row
+            .small-12.columns
+              / h4.highlight Information
+              h3
+                'Full Stack & User Interface at
+                a href="http://www.ginlane.com/" target="_blank" Gin Lane
+              h3
+                'Label Manager at
+                a href="http://siloarts.net/" target="_blank" Silo Arts & Records
+              h3
+                'Pie Baker at
+                a href="http://theupstaterhubarb.com/" target="_blank" The Upstate Rhubarb
+              h3
+                a href="mailto:me@hughfrancis.me?Subject=Let%27s%20Work%20Together%21" target="_blank" me@hughfrancis.me
+
+        .row
+          .small-12.columns.right
+            a href="https://www.facebook.com/hughfrancis89" target="_blank"
+              .social-link style='background-image: url(images/social/facebook.png);'
+            a href="https://twitter.com/_HHFF" target="_blank"
+              .social-link style='background-image: url(images/social/twitter.png);'
+            a href="https://github.com/hhff" target="_blank"
+              .social-link style='background-image: url(images/social/github.png);'
+            a href="http://instagram.com/_hhff" target="_blank"
+              .social-link style='background-image: url(images/social/instagram.png);'
+            a href="https://www.linkedin.com/profile/view?id=224910160&trk=nav_responsive_tab_profile_pic" target="_blank"
+              .social-link style='background-image: url(images/social/linkedin.png);'
+
+
+    #resume-wrapper.row
+      #resume.small-10.small-offset-1.large-12.large-offset-0.columns
+
+        / Name Block
+        #name-block.row
+          .small-12.columns
+            img.pixel-guy src='images/pixel-guy.png'
+            h1 Hugh Francis
+            h4 Curriculum Vitae
+
+        hr
+
+        / About
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Hello
+          .small-12.medium-8.columns
+            h3 Australian-born, NYC-based Web Developer sporting an honors degree in Mechanical Engineering, and a background in sound design, 3D animation and AV Art. I eat healthy, smile at people, bake pies and run my internet record label in my spare time.
+
+            br
+            h4 °˖ ✧◝(○ ヮ ○)◜✧˖ °
+            br
+            h3 p. +1 (551) 221-3610
+            h3
+              'e.
+              a href="mailto:me@hughfrancis.me?Subject=Let%27s%20Work%20Together%21" target="_blank" me@hughfrancis.me
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Expertise
+          .small-12.medium-8.columns
+            .row
+              .small-6.medium-6.columns
+                h4.highlight Development
+
+                h3 Ruby on Rails
+                h3 Spree Commerce
+                h3 Ember / React
+                h3 Angular / Backbone
+                h3 Rspec / Capybara
+                h3 Teaspoon / QUnit
+                h3 Mocha / Jasmine
+                h3 WebGL
+
+              .small-6.medium-6.columns
+                h4.highlight Design
+
+                h3 Adobe Illustrator
+                h3 AutoCAD
+                h3 User Interface
+                h3 User Experience
+                h3 Interaction
+                h3 Wireframing
+                h3 Prototyping
+
+            .info-block.row
+              .small-6.medium-6.columns
+                h4.highlight Tools
+
+                h3 Ruby / Pry
+                h3 Coffeescript / Emberscript
+                h3 Gulp / Grunt / Broccoli
+                h3 Slim / Haml / Emblem
+                h3 SCSS / Compass
+                h3 PHP / Python
+                h3 Zurb Foundation
+
+              .small-6.medium-6.columns
+                h4.highlight Processes
+
+                h3 Jira / Trello
+                h3 Git / Github
+                h3 Circular Integration
+                h3 Scrum / Standups
+                h3 Feature Branch Workflow
+                h3 Agile Development
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Employment
+          .small-12.medium-8.columns
+            .info-piece.row
+              .small-12.columns
+                h2
+                  a href="http://www.ginlane.com" target="_blank" Gin Lane Media
+                h3 January 2013 to Present
+                h4.highlight Full Stack Development
+                br
+                h3 Largescale client work for the likes of Adidas, Michael Kors, AYR (Bonobos), Reformation, Sweetgreen, Baublebar, The Westway and more.  Mainly Ruby on Rails and Javascript MVC.
+                hr
+
+            .info-piece.row
+              .small-12.columns
+                h2 Freelance
+                h3 Like, most of my life
+                h4.highlight Full Stack Development
+                br
+                h3 The hustle is strong.  Mainly LAMP stack and pretty frontends, with a bit of a Ruby on Rails here and there.
+                hr
+
+            .info-piece.row
+              .small-12.columns
+                h2
+                  a href="http://www.cmj.com/marathon" target="_blank" CMJ Music Maraton
+                h3 August 2012 to December 2013
+                h4.highlight Web Design & Development
+                br
+                h3 Think SXSW, but NYC.  I led most of the development work throughout the festivals of these two years - and also lent my hand with a big chunk of the design work.
+                hr
+
+            .info-piece.row
+              .small-12.columns
+                h2
+                  a href="http://siloarts.net" target="_blank" Silo Arts & Records
+                h3 2011 to Present
+                h4.highlight Brand Management & Creative Direction
+                br
+                h3 Silo Arts & Records is my own record label.  I've been doing all of the Graphic Design and required frontend work since day one.  It's not too shabby, if you ask me.
+                hr
+
+            .info-piece.row
+              .small-12.columns
+                h2
+                  a href="http://www.energypower.com.au/" target="_blank" Energy Power Systems
+                h3 January 2011 to late 2012
+                h4.highlight Mechanical Engineer
+                br
+                h3 In a different life, I worked as a Mechanical Engineer.  Energy Power Systems is a subsidiary of Caterpiller.  We mainly installed generators into High Rise buildings.  It was pretty boring, TBH.
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Education
+          .small-12.medium-8.columns
+            .info-piece.row
+              .small-12.columns
+                h2 University of Queensland
+                h3 Bachelor of Engineering (Mechanical)
+                h4.highlight Graduating Honors Class IIB
+
+            .info-piece.row
+              .small-12.columns
+                h2 Rockhampton Grammar School
+                h3 Graduating Year 2006
+                h4.highlight OP3
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Referees
+          .small-12.medium-8.columns
+            .info-piece.row
+              .small-6.columns
+                h2 John Donahue
+                h3 Gin Lane Media
+                h4.highlight Technical Project Manager
+                h3
+                  'e.
+                  a href="mailto:john@ginlanemedia.com?Subject=How%20about%20that%20Hugh%20Francis%2C%20ey%3F" target="_blank" john@ginlanemedia.com
+
+              .small-6.columns
+                h2 Jon O'Brien
+                h3 Playlab Inc
+                h4.highlight Senior Strategist
+                h3
+                  'e.
+                  a href="mailto:obrienjm@gmail.com?Subject=How%20about%20that%20Hugh%20Francis%2C%20ey%3F" target="_blank" obrienjm@gmail.com
+
+            .info-piece.row
+              .small-6.columns
+                h2 Nick Panama
+                h3 Mainframe Group
+                h4.highlight Product Lead
+                h3
+                  'e.
+                  a href="mailto:nick@cantora.com?Subject=How%20about%20that%20Hugh%20Francis%2C%20ey%3F" target="_blank" nick@cantora.com
+
+              .small-6.columns
+                h2 Amy Hintz
+                h3 Flavorpill
+                h4.highlight Account Manager
+                h3
+                  'e.
+                  a href="mailto:amy.hintz@gmail.com?Subject=How%20about%20that%20Hugh%20Francis%2C%20ey%3F" target="_blank" amy.hintz@gmail.com
+
+
+
+
+    #portfolio-wrapper.row
+      #portfolio.small-10.small-offset-1.large-12.large-offset-0.columns
+
+        / Name Block
+        #name-block.row
+          .small-4.columns
+            img.pixel-guy src='images/pixel-guy.png'
+            h1 Hugh Francis
+            h4 Portfolio
+
+          .small-8.columns
+            / img src='images/berlin-beer.jpg'
+        hr
+
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Products
+
+          a href="https://www.google.com/search?q=tasty+salad+google+images&espv=2&biw=1200&bih=988&source=lnms&tbm=isch&sa=X&ei=oxsiVKvvIMSqyASSnoDABA&ved=0CAYQ_AUoAQ#tbm=isch&q=tasty+salad" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/sweetgreen.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 Sweetgreen Online Ordering System
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 The Sweetgreen Online Ordering System is a Rails Middleware & Ember Client that interfaces with Micros via OLO.  It also interfaces with LevelUp for supporting legacy Rewards Users.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Rolling out to Sweetgreen stores in October 2014.  Stay tuned!
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, EmberJS, QUnit, Teaspoon, Rspec, Emberscript
+
+          a href="https://thereformation.com/" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/the-reformation.png);'
+
+                .row
+                  .small-12.columns
+                    h1 The Reformation
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 Gin Lane was asked to replatform the eCommerce site for LA Fashion brand, The Reformation.  We chose to use Ruby on Rails and Spree Commerce in conjunction with a Backbone / ReactJS frontend, for blisteringly fast conversion.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 While the project has been entirely handed off to the client - shortly after launch the conversion rate had almost doubled the brand's former site.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, Spree Commerce, ReactJS, BackboneJS, Capybara
+
+          a href="http://www.awwwards.com/web-design-awards/ayr" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/ayr.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 AYR
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 This popup site was a for the launch of Bonobo's womens clothing line - AYR.  While only live for a few short months, the site featured Spree checkout, enhanced with the use of AngularJS.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 AWWWARDS Site of the Day, The FWA Shortlist
+
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, Spree Commerce, AngularJS
+
+          a href="http://thenextweb.com/dd/2013/06/12/merging-the-digital-and-physical-gin-line-on-the-challenge-of-integrating-ipads-into-stores/" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/baublebar.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 Baublebar iPad App
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 In order to solve a unique problem with custom jewellery, we built an interactive iPad app that allowed 3D visualization of monogrammed pieces.  The system used WebGL (in conjunction with a hacked iOS web view) to visualize the product.  The user could then purchase the piece with their credit card via the attached Mag Reader.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Featured on The Next Web & Business Insider
+
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 WebGL, Ruby on Rails, Spree Commerce, Cinema 4D, Python
+
+          a href="http://calendarcamp.co" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/calendar-camp.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 Calendar Camp
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 A simple Rails app for managing content calendars.  Makes use of the Apartment gem and Postgres schemas for handling multiple companies data.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Currently being used to manage campaigns by the likes of Michael Kors, Adidas, Dolce & Gabanna and Gucci.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, PostgreSQL Multitenancy, Compass, SCSS, Slim
+
+          a href="http://mygirls.adidas.com/com/" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/mygirls.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 Adidas MyGirls
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 The Adidas MyGirls campaign serves as a way to unite Adidas's womens brands.  It's an online experience that interfaces closely with the Adidas Hotspotting API, and is built on Adidas's chosen PHP web framework - Silex.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Featured on AWWWARDS Best Websites and The FWA Shortlist
+
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 PHP, Silex, Twig, SCSS, jQuery
+
+
+
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Open Source
+
+          a href="http://labelmachin.es/" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/label-machines.png);'
+
+                .row
+                  .small-12.columns
+                    h1 Label Machines
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 Label Machines is an online contract generator for Record Labels.  It pulls contract data from an open source Record Label contract, supplied by my Australian Record Label, Silo Arts & Records.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 jQuery, JSON, JSPDF, Digital Ocean
+
+          a href="https://github.com/hhff/spree_music" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/github.png);'
+
+                .row
+                  .small-12.columns
+                    h1 Spree Music
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 Spree Music is a Ruby on Rails Engine for Spree Commerce, that allows the packing and selling of MP3 music.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, FFMPEG, RubyZip
+
+          a href="https://github.com/hhff/spree_ams" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/github.png);'
+
+                .row
+                  .small-12.columns
+                    h1 Spree AMS
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 Spree AMS is a Rails Gem for Spree Commerce that slots into the API namespace.  While keeping the original API intact, this module provides a new set of API routes, responding with Active Model Serializers, rather than RABL Templates.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, Active Model Serializers
+
+          a href="https://github.com/hhff/spree_ember_frontend" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/github.png);'
+
+                .row
+                  .small-12.columns
+                    h1 Spree Ember Frontend
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 The Spree Ember Frontend is a Ruby on Rails Engine that implements the standard Spree Commerce frontend in Ember JS.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Ruby on Rails, Ember JS, Ember Data
+
+
+        hr
+        .info-block.row
+          .small-12.medium-4.columns
+            h2.heading Non Technology
+
+          a href="http://siloarts.net" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/silo-arts.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 Silo Arts & Records
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 Silo Arts & Records is the name of my Australian Record Label.  While remaining boutique and small-scale, Silo Arts & Records is signed to NYC Indie giant, Frenchkiss Records.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Featured on VICE's Thump, Future Music, Purple Sneakers and many more.
+
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Google Docs, Mailchimp, Soundcloud
+
+          a href="http://theupstaterhubarb.com" target="_blank"
+            .info-piece.small-12.medium-8.columns.right
+              .card.row.collapse
+                .portfolio-image.small-12.columns style='background-image: url(images/upstate-rhubarb.jpg);'
+
+                .row
+                  .small-12.columns
+                    h1 The Upstate Rhubarb
+                    hr
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Information
+                    h3 I sell Rhubarb Pies & Smores at Brooklyn's Smorgasbourg on the weekend with my girlfriend.
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Acclaim
+                    h3 Featured on NY Eater, NY Dining Guide and Just Opened New York
+
+                .blurb.row
+                  .small-12.columns
+                    h4.highlight Technology
+                    h3 Blowtorch, Pie Stand
 
   javascript:
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -25,4 +549,5 @@ html.no-js lang="en"
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
 
+  script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.6.0/headroom.min.js"
   script src='scripts/app.js'

@@ -1,0 +1,16 @@
+#loader {
+  @include transition(height, $long-transition, ease-in-out);
+  background-image: url(../images/loader.gif);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  height: 100%;
+  width: 100%;
+  background-color: $light-gray;
+  position: absolute;
+  z-index: 2;
+
+  &.loaded {
+    height: 0%;
+  }
+}
