@@ -1,6 +1,6 @@
 #resume-wrapper {
   @include transition(all $long-transition);
-
+  padding-top: $nav-height;
   position: absolute;
   left: 0;
   right: 0;

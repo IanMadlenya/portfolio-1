@@ -25,8 +25,8 @@ body {
       overflow: hidden;
     }
 
-    #arrow {
-      @include transform(translateX(0px));
+    #show-card {
+      background-color: $pink;
     }
   }
 
@@ -50,8 +50,8 @@ body {
       overflow: hidden;
     }
 
-    #arrow {
-      @include transform(translateX(110px));
+    #show-resume {
+      background-color: $pink;
     }
   }
 
@@ -75,8 +75,8 @@ body {
       @include transform(translateX(0%));
     }
 
-    #arrow {
-      @include transform(translateX(220px));
+    #show-portfolio {
+      background-color: $pink;
     }
   }
 
@@ -104,11 +104,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $dark-gray;
 }
 
+
 h1 {
   @extend %BentonRegular;
-  letter-spacing: 0.4rem;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 900;
 }
 
 h2 {
@@ -119,7 +120,7 @@ h2 {
 
 h3 {
   @extend %BentonRegular;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   line-height: 1.5rem;
 }
 
@@ -128,6 +129,7 @@ h4 {
   letter-spacing: 0.1rem;
   line-height: 1.675rem;
   font-size: 1rem;
+  font-weight: 900;
 }
 
 .highlight {
@@ -153,6 +155,8 @@ hr {
 a {
   @include transition(color, $hover-transition);
   text-decoration: none;
+  font-weight: 900;
+
   &:link, &:visited {
     color: $green;
   }

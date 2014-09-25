@@ -1,5 +1,15 @@
 #card-wrapper {
   @include transition(all $long-transition);
+  padding-top: $nav-height;
+
+  #card-things {
+    @include transition(all $long-transition);
+    height: inherit;
+
+    @media #{$height-small} {
+      @include transform(scale(0.72));
+    }
+  }
 
   height: 100%;
   position: absolute;
@@ -13,6 +23,10 @@
   #card {
     @include transition(all $long-transition ease-in-out);
     text-align: center;
+
+    h1 {
+      font-size: 1.9rem;
+    }
 
     h3 {
       line-height: $standard-bumper * 2.2;
@@ -46,7 +60,7 @@
   @include transition(all, $short-transition);
   padding-bottom: $standard-bumper;
   cursor: pointer;
-  background-color: $light-gray;
+  background-color: #fff;
   border: 1px solid $mid-gray;
   margin-top: 100px;
   // margin-bottom: $standard-bumper !important;

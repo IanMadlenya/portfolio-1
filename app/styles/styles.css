@@ -929,10 +929,8 @@ body {
     transform: translateX(200%);
     height: 100%;
     overflow: hidden; }
-  body.show-card #arrow {
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    transform: translateX(0px); }
+  body.show-card #show-card {
+    background-color: #ff8080; }
   body.show-resume #card-wrapper {
     opacity: 0;
     -webkit-transform: translateX(-100%);
@@ -952,10 +950,8 @@ body {
     transform: translateX(100%);
     height: 100%;
     overflow: hidden; }
-  body.show-resume #arrow {
-    -webkit-transform: translateX(110px);
-    -moz-transform: translateX(110px);
-    transform: translateX(110px); }
+  body.show-resume #show-resume {
+    background-color: #ff8080; }
   body.show-portfolio #card-wrapper {
     opacity: 0;
     -webkit-transform: translateX(-200%);
@@ -975,10 +971,8 @@ body {
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
     transform: translateX(0%); }
-  body.show-portfolio #arrow {
-    -webkit-transform: translateX(220px);
-    -moz-transform: translateX(220px);
-    transform: translateX(220px); }
+  body.show-portfolio #show-portfolio {
+    background-color: #ff8080; }
   body::after {
     content: "";
     background-image: url(../images/background.jpg);
@@ -1017,22 +1011,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #1a1a1a; }
 
 h1 {
-  letter-spacing: 0.4rem;
   font-size: 1.5rem;
-  text-transform: uppercase; }
+  text-transform: capitalize;
+  font-weight: 900; }
 
 h2 {
   letter-spacing: 0.3rem;
   text-transform: uppercase; }
 
 h3 {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   line-height: 1.5rem; }
 
 h4 {
   letter-spacing: 0.1rem;
   line-height: 1.675rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 900; }
 
 .highlight {
   color: #3a8585; }
@@ -1056,7 +1051,8 @@ a {
   -ms-transition: color, 200ms;
   -o-transition: color, 200ms;
   transition: color, 200ms;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 900; }
   a:link, a:visited {
     color: #3a8585; }
   a:active, a:hover {
@@ -1113,20 +1109,6 @@ nav {
       nav .links .nav-link:hover {
         background-color: #ff8080;
         cursor: pointer; }
-    nav .links #arrow {
-      -webkit-transition: all, 1200ms;
-      -moz-transition: all, 1200ms;
-      -ms-transition: all, 1200ms;
-      -o-transition: all, 1200ms;
-      transition: all, 1200ms;
-      background-image: url(../images/arrow.png);
-      height: 20px;
-      width: 20px;
-      position: absolute;
-      top: 50px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-left: 40px; }
 
 #overlay {
   position: fixed;
@@ -1140,10 +1122,23 @@ nav {
   -ms-transition: all 1200ms;
   -o-transition: all 1200ms;
   transition: all 1200ms;
+  padding-top: 40px;
   height: 100%;
   position: absolute;
   left: 0;
   right: 0; }
+  #card-wrapper #card-things {
+    -webkit-transition: all 1200ms;
+    -moz-transition: all 1200ms;
+    -ms-transition: all 1200ms;
+    -o-transition: all 1200ms;
+    transition: all 1200ms;
+    height: inherit; }
+    @media screen and (min-height: 0em) and (max-height:50em) {
+      #card-wrapper #card-things {
+        -webkit-transform: scale(0.72);
+        -moz-transform: scale(0.72);
+        transform: scale(0.72); } }
   #card-wrapper .card .portfolio-image {
     height: 28rem; }
   #card-wrapper #card {
@@ -1153,6 +1148,8 @@ nav {
     -o-transition: all 1200ms ease-in-out;
     transition: all 1200ms ease-in-out;
     text-align: center; }
+    #card-wrapper #card h1 {
+      font-size: 1.9rem; }
     #card-wrapper #card h3 {
       line-height: 2.0625rem;
       font-size: 1.1rem;
@@ -1185,7 +1182,7 @@ nav {
   transition: all, 300ms;
   padding-bottom: 0.9375rem;
   cursor: pointer;
-  background-color: #f2f2f2;
+  background-color: #fff;
   border: 1px solid #D8D8D8;
   margin-top: 100px; }
   .card .portfolio-image {
@@ -1212,6 +1209,7 @@ nav {
   -ms-transition: all 1200ms;
   -o-transition: all 1200ms;
   transition: all 1200ms;
+  padding-top: 40px;
   position: absolute;
   left: 0;
   right: 0; }
@@ -1247,6 +1245,7 @@ nav {
   -ms-transition: all 1200ms;
   -o-transition: all 1200ms;
   transition: all 1200ms;
+  padding-top: 40px;
   position: absolute;
   left: 0;
   right: 0; }
