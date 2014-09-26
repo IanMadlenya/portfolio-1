@@ -20,9 +20,10 @@ window.onload = function() {
     return classie.remove(body, 'show-portfolio');
   });
   showPortfolio = document.getElementById('show-portfolio');
-  return showPortfolio.addEventListener('click', function() {
+  showPortfolio.addEventListener('click', function() {
     classie.remove(body, 'show-card');
     classie.remove(body, 'show-resume');
     return classie.add(body, 'show-portfolio');
   });
+  return FastClick.attach(document.body);
 };

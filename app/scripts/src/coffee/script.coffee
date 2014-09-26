@@ -27,3 +27,5 @@ window.onload = ->
     classie.remove body, 'show-card'
     classie.remove body, 'show-resume'
     classie.add body, 'show-portfolio'
+
+  FastClick.attach document.body

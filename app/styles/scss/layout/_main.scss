@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  min-height: 600px;
   overflow-x: hidden;
 
   &.show-card {
@@ -109,7 +110,7 @@ h1 {
   @extend %BentonRegular;
   font-size: 1.5rem;
   text-transform: capitalize;
-  font-weight: 900;
+  // font-weight: 900;
 }
 
 h2 {
@@ -129,7 +130,7 @@ h4 {
   letter-spacing: 0.1rem;
   line-height: 1.675rem;
   font-size: 1rem;
-  font-weight: 900;
+  // font-weight: 900;
 }
 
 .highlight {
@@ -155,7 +156,7 @@ hr {
 a {
   @include transition(color, $hover-transition);
   text-decoration: none;
-  font-weight: 900;
+  // font-weight: 900;
 
   &:link, &:visited {
     color: $green;

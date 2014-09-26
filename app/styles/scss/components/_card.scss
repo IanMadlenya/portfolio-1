@@ -1,14 +1,16 @@
 #card-wrapper {
   @include transition(all $long-transition);
   padding-top: $nav-height;
+  opacity: 0;
+  min-height: 100%;
 
   #card-things {
     @include transition(all $long-transition);
     height: inherit;
 
-    @media #{$height-small} {
-      @include transform(scale(0.72));
-    }
+    // @media #{$height-small} {
+    //   @include transform(scale(0.8));
+    // }
   }
 
   height: 100%;
@@ -18,6 +20,11 @@
 
   .card .portfolio-image {
     height: 28rem;
+    background-position: 50% 30%;
+
+    @media #{$height-small} {
+      height: 14rem;
+    }
   }
 
   #card {
@@ -30,8 +37,12 @@
 
     h3 {
       line-height: $standard-bumper * 2.2;
-      font-size: 1.1rem;
+      font-size: 0.9rem;
       letter-spacing: 0.1rem;
+
+      @media #{$height-small} {
+        font-size: 0.75rem;
+      }
     }
 
     &.loading {

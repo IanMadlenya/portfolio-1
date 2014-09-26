@@ -4,6 +4,8 @@
   position: absolute;
   left: 0;
   right: 0;
+  opacity: 0;
+  min-height: 100%;
 
   #resume {
     @include transition(all, $long-transition);
