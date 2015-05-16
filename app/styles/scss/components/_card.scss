@@ -21,6 +21,7 @@
   .card .portfolio-image {
     height: 28rem;
     background-position: 50% 30%;
+    
 
     @media #{$height-small} {
       height: 14rem;
@@ -80,6 +81,19 @@
     height: 16rem;
     background-size: cover;
     background-position: center center;
+    z-index: 1;
+  }
+
+  .gradient-backing {
+    height: 16rem;
+    background: $green;
+    background: -moz-linear-gradient(left, $green 0%, $pink 100%);
+    background: -webkit-gradient(linear, left top, right top,color-stop(0%,$green), color-stop(100%,$pink));
+    background: -webkit-linear-gradient(left, $green 0%,$pink 100%);
+    background: -o-linear-gradient(left, $green 0%,$pink 100%);
+    background: -ms-linear-gradient(left, $green 0%,$pink 100%);
+    background: linear-gradient(to right, $green 0%,$pink 100%);
+    opacity: 0.75;
   }
 
   hr {

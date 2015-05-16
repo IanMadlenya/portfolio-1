@@ -1666,7 +1666,18 @@ nav {
   .card .portfolio-image {
     height: 16rem;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    z-index: 1; }
+  .card .gradient-backing {
+    height: 16rem;
+    background: #3a8585;
+    background: -moz-linear-gradient(left, #3a8585 0%, #ff8080 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #3a8585), color-stop(100%, #ff8080));
+    background: -webkit-linear-gradient(left, #3a8585 0%, #ff8080 100%);
+    background: -o-linear-gradient(left, #3a8585 0%, #ff8080 100%);
+    background: -ms-linear-gradient(left, #3a8585 0%, #ff8080 100%);
+    background: linear-gradient(to right, #3a8585 0%, #ff8080 100%);
+    opacity: 0.75; }
   .card hr {
     margin-top: 0px; }
   .card h1 {
